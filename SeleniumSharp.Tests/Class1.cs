@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SeleniumSharp
+namespace SeleniumSharp.Tests
 {
     [TestFixture]
-    class GoogleTest
+    public class Class1
     {
+
+
         public static void Main()
         {
         }
@@ -51,10 +53,10 @@ namespace SeleniumSharp
             driver.Quit();
             Console.WriteLine("TearDown finished");
         }
-                
+
         public void Wait(int seconds)
         {
-            Thread.Sleep(seconds* 1000);
+            Thread.Sleep(seconds * 1000);
         }
-    }
+    } 
 }
